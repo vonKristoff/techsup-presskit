@@ -44,6 +44,7 @@
 		]
 	},
 	"dependencies": {
-		"@archetypaltech/ayiui": "^0.6.27"
+		"@archetypaltech/ayiui": "^0.6.27",
+		"@techsup/tsui": "^0.0.6"
 	}
 }

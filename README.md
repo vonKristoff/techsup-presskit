@@ -1,16 +1,26 @@
-# Archetypal Tech
+# Presskit
 
-![Archetypal](./archetypal-heading.jpg)
 
-_Presskit for The O'rrugin Trail_
-
-## [press.theoruggintrail.com](https://press.theoruggintrail.com)
-
+## menu data
+```json
+export default [
+	{
+		label: 'Factsheet',
+		link: 'factsheet'
+	},
+	{
+		label: "About O'RuggEd",
+		children: [
+			{
+				label: "About O'RuggEd",
+				link: "about-o'rugged/about-o'rugged"
+			},
+		]
+	},
+];
 ```
-ip: 66.241.124.168
-app-label: presskit-oruggintrail
-host: fly.io
-```
+
+
 
 ### 👷‍♂️ Developer
 
@@ -26,15 +36,6 @@ brew install pnpm
 - start runtime server: `pnpm dev`
 - `http://localhost:5173`
 
-### 🚀 Deployments
-
-We are using Github actions to manage deployments automatically.
-
-This means _any_ commit to the repo will initiate the action, which will attempt to deploy to the fly hosting service.
-
-If there are any build errors - the working build remains. In the case of failure you will most likely get a message from Github, or you can check here at https://github.com/ArchetypalTech/www-orug/actions/
-
-⏱️ Approximate deployment time: `2 mins` -> maybe a few mins after to allow propagate changes
 
 ### 🧭 App structure
 

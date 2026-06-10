@@ -4,7 +4,7 @@
 	import { Icon } from '@archetypaltech/ayiui';
 	import Inventory from '$lib/components/Inventory.svelte';
 	import Menu from '$lib/components/menu.svelte';
-	import Footer from '$lib/components/footer.svelte';
+	import { Footer } from '@techsup/tsui';
 	import { MediaQuery } from 'svelte/reactivity';
 	import { page } from '$app/state';
 	let { data, children } = $props();
@@ -38,13 +38,23 @@
 						>Home</a
 					>
 				</div>
+				<div class="flex gap-2">
+					<Icon ctx="discord" size="1" type="stroke" /><a
+						target="_blank"
+						href="https://discord.gg/hxvdtrnT"
+						aria-label="join our discord"
+						class="link">Join our Discord</a
+					>
+				</div>
 			</Menu>
 		</aside>
 
 		<section class="page-container px-12 py-8">
 			{#if page.url.pathname !== '/'}
 				<div class="mb-12">
-					<h1 class="text-primary-100 text-right text-2xl font-bold">{data.title}</h1>
+					<h1 class="text-primary-100 text-right text-2xl font-bold">
+						{page.url.pathname.split('/').pop()}
+					</h1>
 				</div>
 			{/if}
 			<article class="prose">
@@ -56,7 +66,13 @@
 		</aside>
 	</div>
 </main>
-<Footer />
+<Footer
+	--bg-color="yellow"
+	--jjj="red"
+	--border-color="black"
+	overlay="darken"
+	badge="/techsup.jpg"
+/>
 
 <style>
 	@import 'tailwindcss';

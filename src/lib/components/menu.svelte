@@ -108,7 +108,6 @@
 	>
 		<div class="circle group-hover:transition-none"></div>
 		<a
-			target={node.link?.includes('https') ? '_blank' : '_self'}
 			tabindex={sidebar ? 0 : -1}
 			class="link group-hover:text-accent transition-colors"
 			href={`${node.link?.includes('https') ? '' : '/'}${node.link}`}>{node.label}</a

@@ -1,63 +1,26 @@
 export default [
 	{
-		label: 'Factsheet',
-		link: 'factsheet'
+		label: 'Contact',
+		link: 'contact'
 	},
 	{
-		label: "About O'RuggEd",
+		label: 'Koleider',
 		children: [
 			{
-				label: "About O'RuggEd",
-				link: "about-o'rugged/about-o'rugged"
+				label: 'Factsheet',
+				link: 'koleider/factsheet'
 			},
 			{
-				label: "Creating Stories with O'RuggEd",
-				link: "about-o'rugged/creating-stories-with-o'rugged"
+				label: 'Description',
+				link: 'koleider/description'
 			},
 			{
-				label: "How O'RuggEd works",
-				link: "about-o'rugged/how-o'rugged-works"
-			}
-		]
-	},
-	{
-		label: 'How to Create your Story',
-		children: [
-			{
-				label: 'Creation Guide Introduction',
-				link: 'how-to-create-your-story/creation-guide-introduction'
+				label: 'Testimonials',
+				link: 'koleider/testimonials'
 			},
 			{
-				label: 'Lesson 1',
-				link: 'how-to-create-your-story/lesson-1'
-			},
-			{
-				label: 'Lesson 2',
-				link: 'how-to-create-your-story/lesson-2'
-			},
-			{
-				label: 'Lesson 3',
-				link: 'how-to-create-your-story/lesson-3'
-			},
-			{
-				label: 'Lesson 4',
-				link: 'how-to-create-your-story/lesson-4'
-			},
-			{
-				label: 'Lesson 5',
-				link: 'how-to-create-your-story/lesson-5'
-			},
-			{
-				label: 'Lesson 6',
-				link: 'how-to-create-your-story/lesson-6'
-			},
-			{
-				label: 'Lesson 7',
-				link: 'how-to-create-your-story/lesson-7'
-			},
-			{
-				label: 'Lesson 8',
-				link: 'how-to-create-your-story/lesson-8'
+				label: 'Images',
+				link: 'koleider/images'
 			}
 		]
 	}
